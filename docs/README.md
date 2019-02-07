@@ -31,7 +31,7 @@ yarn install vsf-external-checkout-module --save
 }
 ````
 3. Enable cart synchronization for your Vue Storefront instance in `config/local.json`
-````
+````json
 cart": {
   "synchronize": true,
   ...
@@ -53,7 +53,7 @@ export const registerModules: VueStorefrontModule[] = [
 ## How to use for a specific stores in a multistore setup
 
 You can specify which storeviews should use the external checkout by adding each store code to your `config/local.json` file.
-````js
+````json
 "externalCheckout": {
   "cmsUrl" : "https://yourcmsaddress.com",
   "stores": {
