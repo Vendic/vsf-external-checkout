@@ -5,7 +5,7 @@ This plugin requires cart and user sync on your backend (see [integrations](http
 
 See [live demo](https://demo-magento-checkout.vuestorefront.io/) - add something to your cart and proceed to checkout.
 <center>
-<img src="./diagram.png">
+<img src="./media/diagram.png">
 </center>
 
 ## Current CMS integrations for this extension
@@ -23,10 +23,10 @@ When user tries to enter your Vue Storefront checkout:
 
 1. Install the extension on your Vue Storefront instance
 ````
-yarn install vsf-external-checkout --save
+yarn install vsf-external-checkout-module --save
 ````
 2. Add CMS address to your `config/local.json` file.
-````js
+````json
 "externalCheckout": {
   "cmsUrl" : "https://yourcmsaddress.com"
 }
@@ -38,11 +38,13 @@ cart": {
   ...
 }
 ````
-4. Register the extension in `src/extensions/index.js` file
+4. Register the extension in `src/modules/index.ts` file
 ````js
-export default [
-  // other extensions
-  require('vsf-external-checkout/index.js'),
+import { ExternalCheckout} from "./external-checkout"
+
+export const registerModules: VueStorefrontModule[] = [
+   // other extensions
+  ExternalCheckout
 ]
 ````
 
