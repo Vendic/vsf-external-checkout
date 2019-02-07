@@ -1,6 +1,6 @@
 {
   "name": "vsf-external-checkout-module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "External checkout module for Vue Storefront",
   "main": "index.ts",
   "scripts": {
