@@ -21,9 +21,13 @@ When user tries to enter your Vue Storefront checkout:
 ## Installation
 
 1. Install the extension on your Vue Storefront instance
+
+Add to package.json:
+````json
+"vsf-external-checkout-module": "^1.0.1"
 ````
-yarn install vsf-external-checkout-module --save
-````
+And run `yarn` to install the package.
+
 2. Add CMS address to your `config/local.json` file.
 ````json
 "externalCheckout": {
@@ -40,7 +44,7 @@ cart": {
 
 4. Register the extension in `src/modules/index.ts` file
 ````js
-import { ExternalCheckout} from "./external-checkout"
+import { ExternalCheckout } from 'vsf-external-checkout-module'
 
 export const registerModules: VueStorefrontModule[] = [
    // other extensions
