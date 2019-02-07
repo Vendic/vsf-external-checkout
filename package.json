@@ -1,0 +1,22 @@
+{
+  "name": "vsf-external-checkout-module",
+  "version": "1.0.0",
+  "description": "External checkout module for Vue Storefront",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vendic/vsf-external-checkout.git"
+  },
+  "contributors": [
+    "Filip Rakowski",
+    "Tjitse Efde"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vendic/vsf-external-checkout/issues"
+  },
+  "homepage": "https://github.com/Vendic/vsf-external-checkout/blob/master/docs/README.md"
+}
