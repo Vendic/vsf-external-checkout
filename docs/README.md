@@ -12,7 +12,6 @@ See [live demo](https://demo-magento-checkout.vuestorefront.io/) - add something
 
 * [Magento 2](https://github.com/DivanteLtd/magento2-external-checkout)
 
-
 ## How it works?
 
 When user tries to enter your Vue Storefront checkout:
@@ -38,6 +37,7 @@ cart": {
   ...
 }
 ````
+
 4. Register the extension in `src/modules/index.ts` file
 ````js
 import { ExternalCheckout} from "./external-checkout"
@@ -47,6 +47,8 @@ export const registerModules: VueStorefrontModule[] = [
   ExternalCheckout
 ]
 ````
+
+5. Install the appropriate module for your CMS. Currently only [Magento 2](https://github.com/DivanteLtd/magento2-external-checkout) is supported.
 
 ## How to use for a specific stores in a multistore setup
 
@@ -70,3 +72,6 @@ You can specify which storeviews should use the external checkout by adding each
 If you want to integrate this extension with your backend CMS make sure that entering `{your_CMS_url}/vue/cart/sync/token/{user-token}/cart/{cart_token}` will do the following:
 1. Synchronize cart and user data between Vue Storefront and your CMS
 2. Redirect user to external checkout
+
+## Suggestions
+For integrations with [Magento 2](https://github.com/DivanteLtd/magento2-external-checkout), also have a look at [this module that allows you to run Magento 2 in checkout only mode](https://github.com/Vendic/magento2-checkout-only)
