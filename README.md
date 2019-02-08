@@ -19,13 +19,9 @@ When user tries to enter your Vue Storefront checkout:
 
 ## Installation
 
-1. Install the extension on your Vue Storefront instance
+### Manual installation
 
-Add to package.json:
-````json
-"vsf-external-checkout-module": "^1.0.1"
-````
-And run `yarn` to install the package.
+1. Download the [latest release](https://github.com/Vendic/vsf-external-checkout/releases) and extract it in `src/modules/external-checkout`
 
 2. Add CMS address to your `config/local.json` file.
 ````json
@@ -43,7 +39,7 @@ cart": {
 
 4. Register the extension in `src/modules/index.ts` file
 ````js
-import { ExternalCheckout } from 'vsf-external-checkout-module'
+import { ExternalCheckout } from './external-checkout'
 
 export const registerModules: VueStorefrontModule[] = [
    // other extensions
@@ -52,6 +48,9 @@ export const registerModules: VueStorefrontModule[] = [
 ````
 
 5. Install the appropriate module for your CMS. Currently only [Magento 2](https://github.com/DivanteLtd/magento2-external-checkout) is supported.
+
+### Installation with Yarn
+[This feature is not yet support](https://github.com/Vendic/vsf-external-checkout/issues/2)
 
 ## How to use for a specific stores in a multistore setup
 
