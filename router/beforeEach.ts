@@ -1,7 +1,7 @@
 import {Route} from 'vue-router'
 import rootStore from '@vue-storefront/store'
 import config from 'config'
-import {storeCodeFromRoute} from '@vue-storefront/core/store/lib/multistore'
+import {storeCodeFromRoute} from '@vue-storefront/core/lib/multistore'
 
 export function beforeEach(to: Route, from: Route, next) {
 
