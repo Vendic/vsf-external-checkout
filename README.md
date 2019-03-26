@@ -21,6 +21,13 @@ When user tries to enter your Vue Storefront checkout:
 
 ## Installation
 
+**Which version should I use ?**
+
+Magento Version                                     | External Checkout Latest Version
+----------------------------------------------------|------------------------------------------------------------------------
+VueStorefront 1.8   | vsf-external-checkout 1.x
+VueStorefront 1.9   | vsf-external-checkout 2.x
+
 ### Manual installation
 
 1. Download the [latest release](https://github.com/Vendic/vsf-external-checkout/releases) and extract it in `src/modules/external-checkout`
