@@ -15,13 +15,13 @@ export function beforeEach(to: Route, from: Route, next) {
 
   if (multistoreEnabled) {
     if (storeCode in stores && to.name === storeCode + '-checkout') {
-      window.location.replace(stores[storeCode].cmsUrl + '?token=' + userToken + '&cart=' + cartToken)
+      window.location.replace(stores[storeCode].cmsUrl + '/vue/cart/sync/token/' + userToken + '/cart/' + cartToken)
     } else {
       next()
     }
   } else {
     if (to.name === 'checkout') {
-      window.location.replace(cmsUrl + '?token=' + userToken + '&cart=' + cartToken)
+      window.location.replace(cmsUrl + '/vue/cart/sync/token/' + userToken + '/cart/' + cartToken)
     } else {
       next()
     }
