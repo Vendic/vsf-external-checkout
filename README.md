@@ -3,21 +3,30 @@
 With this extension you can use your CMS checkout (e.g. Magento) instead of default [Vue Storefront](https://github.com/DivanteLtd/vue-storefront) checkout.
 This plugin requires cart and user sync on your backend (see [integrations](https://github.com/filrak/vsf-external-checkout#current-cms-integrations-for-this-extension) )
 
-<center>
-<img src="./media/diagram.png">
-</center>
+![VueStorefront demo with external checkout](https://images.ctfassets.net/ob7fjdpx9cry/FPmgKirYGq6g2Ac408ekk/0131b55a0ddf148d85794a6a35f8af3e/ezgif.com-gif-maker-1.gif)
 
 ## Current CMS integrations for this extension
 
-* [Magento 2](https://github.com/DivanteLtd/magento2-external-checkout)
+* [Magento 2](https://github.com/Vendic/magento2-external-checkout)
 
 ## How it works?
+
+<center>
+<img src="./media/diagram.png">
+</center>
 
 When user tries to enter your Vue Storefront checkout:
 1. The extension synchronizes cart and user data with your backend CMS
 2. User is redirected to your CMS checkout (extension overrides `/checkout` route).
 
 ## Installation
+
+**Which version should I use ?**
+
+Magento Version                                     | External Checkout Latest Version
+----------------------------------------------------|------------------------------------------------------------------------
+VueStorefront 1.8   | vsf-external-checkout 1.x
+VueStorefront 1.9   | vsf-external-checkout 2.x
 
 ### Manual installation
 

@@ -1,5 +1,5 @@
 import {Route} from 'vue-router'
-import rootStore from '@vue-storefront/store'
+import rootStore from '@vue-storefront/core/store'
 import config from 'config'
 import {storeCodeFromRoute} from '@vue-storefront/core/lib/multistore'
 

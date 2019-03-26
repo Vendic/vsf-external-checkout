@@ -60,7 +60,7 @@ import BaseTextarea from 'theme/components/core/blocks/Form/BaseTextarea'
 import ButtonOutline from 'theme/components/theme/ButtonOutline'
 import VueOfflineMixin from 'vue-offline/mixin'
 import { EmailForm } from '@vue-storefront/core/modules/mailer/components/EmailForm'
-import rootStore from '@vue-storefront/store'
+import rootStore from '@vue-storefront/core/store'
 export default {
   name: 'ExternalThankYouPage',
   mixins: [Composite, VueOfflineMixin, EmailForm],
