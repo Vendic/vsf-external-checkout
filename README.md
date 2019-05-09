@@ -88,6 +88,5 @@ If you want to integrate this extension with your backend CMS make sure that ent
 For integrations with [Magento 2](https://github.com/DivanteLtd/magento2-external-checkout), also have a look at [this module that allows you to run Magento 2 in checkout only mode](https://github.com/Vendic/magento2-checkout-only)
 
 
-#### About Vendic
-
+### About Vendic
 [Vendic](https://www.vendic.nl "Vendic Homepage") develops technically challenging e-commerce websites using Magento 2, as well as innovative headless PWA shops. Feel free to check out our projects on our website.
