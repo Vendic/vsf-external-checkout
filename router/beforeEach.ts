@@ -3,8 +3,7 @@ import rootStore from '@vue-storefront/core/store'
 import config from 'config'
 import {storeCodeFromRoute} from '@vue-storefront/core/lib/multistore'
 
-export function beforeEach(to: Route, from: Route, next) {
-
+export function beforeEach (to: Route, from: Route, next) {
   const cartToken: string = rootStore.state.cart.cartServerToken;
   const userToken: string = rootStore.state.user.token;
   const externalCheckoutConfig = {...config.externalCheckout};
