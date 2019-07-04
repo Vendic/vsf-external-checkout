@@ -3,7 +3,8 @@ import rootStore from '@vue-storefront/core/store'
 import config from 'config'
 import {storeCodeFromRoute} from '@vue-storefront/core/lib/multistore'
 
-export function beforeEach (to: Route, from: Route, next) {
+export function beforeEach(to: Route, from: Route, next) {
+
   const cartToken: string = rootStore.state.cart.cartServerToken;
   const userToken: string = rootStore.state.user.token;
   const externalCheckoutConfig = {...config.externalCheckout};
@@ -15,6 +16,8 @@ export function beforeEach (to: Route, from: Route, next) {
   if (multistoreEnabled) {
     if (storeCode in stores && to.name === storeCode + '-checkout') {
       window.location.replace(stores[storeCode].cmsUrl + '/vue/cart/sync/token/' + userToken + '/cart/' + cartToken)
+    } else if (to.name === 'checkout') {
+      window.location.replace(stores[config.defaultStoreCode].cmsUrl + '/vue/cart/sync/token/' + userToken + '/cart/' + cartToken)
     } else {
       next()
     }
