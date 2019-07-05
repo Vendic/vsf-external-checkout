@@ -6,6 +6,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 2.0.1 - 05-07-2019
 ### Fixes
-- [#13](https://github.com/Vendic/vsf-external-checkout/issues/13) Fix for cases in which your Multistore doesn't use the store code in the URL for the main store
-
-
+- [#13](https://github.com/Vendic/vsf-external-checkout/issues/13) Fix for cases in which your Multistore doesn't use the store code in the URL for the main store [#14](https://github.com/Vendic/vsf-external-checkout/pull/14) - [@jpetar](https://github.com/jpetar)
