@@ -48,7 +48,7 @@ cart": {
 
 4. Register the extension in `src/modules/client.ts` file and [disable the 'Instant checkout' module](https://github.com/Vendic/vsf-external-checkout/issues/11)
 ````js
-import { ExternalCheckout } from 'external-checkout'
+import { ExternalCheckout } from 'vsf-external-checkout-module'
 
 export function registerClientModules () {
   // ... other modules
