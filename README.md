@@ -48,12 +48,14 @@ cart": {
 
 4. Register the extension in `src/modules/client.ts` file and [disable the 'Instant checkout' module](https://github.com/Vendic/vsf-external-checkout/issues/11)
 ````js
-import { ExternalCheckout } from 'vsf-external-checkout-module'
+import { ExternalCheckout } from './external-checkout'
+// import { InstantCheckout } from './instant-checkout'
 
-export function registerClientModules () {
-  // ... other modules
-  registerModule(ExternalCheckout)
-}
+export const registerModules: VueStorefrontModule[] = [
+   // other extensions
+  ExternalCheckout,
+  // InstantCheckout,
+]
 ````
 
 1. Install the appropriate module for your CMS. Currently only [Magento 2](https://github.com/Vendic/magento2-external-checkout) is supported.
