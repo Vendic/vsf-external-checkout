@@ -58,7 +58,7 @@ export const registerModules: VueStorefrontModule[] = [
 ]
 ````
 
-1. Install the appropriate module for your CMS. Currently only [Magento 2](https://github.com/Vendic/magento2-external-checkout) is supported.
+5. Install the appropriate module for your CMS. Currently only [Magento 2](https://github.com/Vendic/magento2-external-checkout) is supported.
 
 ### Installation with Yarn
 [This feature is not yet support](https://github.com/Vendic/vsf-external-checkout/issues/2)
