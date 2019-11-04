@@ -27,6 +27,7 @@ Magento Version                                     | External Checkout Latest V
 ----------------------------------------------------|------------------------------------------------------------------------
 VueStorefront 1.8   | vsf-external-checkout 1.x
 VueStorefront 1.9   | vsf-external-checkout 2.x
+VueStorefront 1.11+ | vsf-external-checkotu 3.x
 
 ### Manual installation
 
