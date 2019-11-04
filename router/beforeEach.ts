@@ -1,10 +1,9 @@
-import {Route} from 'vue-router'
-import rootStore from '@vue-storefront/core/store'
 import config from 'config'
-import {currentStoreView} from '@vue-storefront/core/lib/multistore'
+import { Route } from 'vue-router'
+import rootStore from '@vue-storefront/core/store'
+import { currentStoreView } from '@vue-storefront/core/lib/multistore'
 
 export function beforeEach(to: Route, from: Route, next) {
-
   const cartToken: string = rootStore.state.cart.cartServerToken;
   const userToken: string = rootStore.state.user.token;
   const externalCheckoutConfig = {...config.externalCheckout};

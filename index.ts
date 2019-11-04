@@ -1,20 +1,13 @@
-import {VueStorefrontModule, VueStorefrontModuleConfig} from '@vue-storefront/core/lib/module'
-import {beforeEach} from './router/beforeEach'
-import {routes} from './router/routes';
+import config from 'config'
 
-const store = {
-  namespaced: true,
-  state: {
-    key: null
-  }
-}
+import { StorefrontModule } from '@vue-storefront/core/lib/modules'
+import { setupMultistoreRoutes } from '@vue-storefront/core/lib/multistore'
+import { beforeEach } from './router/beforeEach'
+import { routes } from './router/routes'
 
 export const KEY = 'external-checkout'
 
-const moduleConfig: VueStorefrontModuleConfig = {
-  key: KEY,
-  store: {modules: [{key: KEY, module: store}]},
-  router: {beforeEach, routes}
+export const ExternalCheckout: StorefrontModule = function ({ router }) {
+  router.beforeEach(beforeEach)
+  setupMultistoreRoutes(config, router, routes, 10)
 }
-
-export const ExternalCheckout = new VueStorefrontModule(moduleConfig)
