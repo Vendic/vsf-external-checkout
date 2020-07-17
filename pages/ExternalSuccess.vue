@@ -15,15 +15,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 pl20 pr20">
-            <h3 v-if="OnlineOnly" >
+            <h3 v-if="OnlineOnly">
               {{ $t('Your purchase') }}
             </h3>
             <p v-html="this.$t('You have successfuly placed the order. You can check status of your order by using our <b>delivery status</b> feature. You will receive an order confirmation e-mail with details of your order and a link to track its progress.')" />
-            <p v-html="this.$t('E-mail us at <b>demo@vuestorefront.io</b> with any questions, suggestions how we could improve products or shopping experience')"/>
+            <p v-html="this.$t('E-mail us at <b>demo@vuestorefront.io</b> with any questions, suggestions how we could improve products or shopping experience')" />
             <h4>
               {{ $t('Your Account') }}
             </h4>
-            <p v-html="this.$t('You can log to your account using e-mail and password defined earlier. On your account you can <b>edit your profile data,</b> check <b>history of transactions,</b> edit <b>subscription to newsletter.</b>')"/>
+            <p v-html="this.$t('You can log to your account using e-mail and password defined earlier. On your account you can <b>edit your profile data,</b> check <b>history of transactions,</b> edit <b>subscription to newsletter.</b>')" />
           </div>
           <div class="col-md-6 pt30 bg-cl-secondary thank-you-improvment">
             <h3>
